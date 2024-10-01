@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter any Integer Number :");
+        
+        int num = sc.nextInt();
+        
+      int remainer = 0;
+      
+      while(num > 0){
+          
+          remainer = (remainer * 10) + (num % 10);
+          num = num / 10;
+          
+      } 
+      
+      System.out.println(remainer);
+       
+    }
+}
