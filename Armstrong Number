@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter any Integer Number :");
+        
+        int num = sc.nextInt();
+        
+      int digit ;
+      int sum = 0;
+      int temp = num;
+      
+      while(temp > 0){
+          
+          digit = temp % 10;
+          sum = sum + digit*digit*digit;
+          temp = temp / 10;
+          
+          
+      } 
+      
+      
+      System.out.println(sum);
+      
+      
+      if(sum == num){
+          System.out.println("ARMSTRONG");
+      }
+      
+      else{
+          System.out.println("NOT ARMSTRONG");
+      }
+       
+    }
+}
