@@ -1,0 +1,74 @@
+BASIC OF STRING:
+
+import java.util.*;
+
+public class Main{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter any Integer Number :");
+        
+        String num = sc.nextLine();
+        
+        System.out.print("Out Put Result is :");
+        
+        System.out.print(num);
+        System.out.println();
+        
+        //Findout length;
+        
+        // int ln = num.length();
+        
+        // System.out.println(ln);
+        
+        // String rep = num.replaceAll("miss","nur");
+        
+        // System.out.println(rep);
+        
+        // int updatedIndex = num.indexOf("g");
+        
+        // System.out.println(updatedIndex);
+        
+        // char ch = num.charAt(0);
+        
+        // System.out.println(ch);
+        
+        //  String str = num.substring(1,5);
+        
+        // System.out.println(str);
+        
+        // String name = num.toLowerCase();
+        
+        // System.out.println(name);
+        
+        
+        // String name1 = num.trim().replaceAll("\\s", "");
+        
+        // String name2 = num.trim();
+        
+        // System.out.println(name2);
+        
+        
+        // char [] arr = num.toCharArray();
+        
+        // for (char ch : arr){
+            
+        //      System.out.print(ch+ " ");
+        // } 
+        
+        // System.out.println();
+    
+    
+     String [] arr1 = num.split(" ");
+        
+        for (String words : arr1){
+            
+             System.out.print(words+ " ");
+        } 
+        
+        System.out.println();
+    
+      
+
+    }
+}
