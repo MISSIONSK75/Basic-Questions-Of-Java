@@ -1,0 +1,40 @@
+
+
+##COUNT NUMBER OF VOWELS AND NUMBER OF CONSONANT FROM GIVEN STRING
+
+CODE:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter any Numbers :");
+        
+        String name = sc.nextLine();
+        
+        name = name.toLowerCase();
+        
+        int vol = 0; int con = 0;
+        
+        for(int i = 0; i < name.length(); i++){
+            
+            char ch = name.charAt(i);
+            
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+                vol++;
+            }
+            
+            else{
+                con++;
+            }
+        }
+        
+        
+        System.out.println(vol);
+        System.out.println(con);
+            
+        }
+    
+    }
