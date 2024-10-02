@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter any Numbers :");
+        
+        String name = sc.nextLine();
+        
+        name = name.toLowerCase();
+        
+        StringBuffer sb = new StringBuffer(name);
+        
+        String reverseResult = sb.reverse().toString();
+        
+       // System.out.println(reverseResult);
+       
+       if(name.equals(reverseResult)){
+           System.out.println("PALINDROME");
+       } else{
+            System.out.println("NOT PALINDROME");
+       }
+    }
+}
